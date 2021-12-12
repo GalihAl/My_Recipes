@@ -9,13 +9,14 @@ import com.bumptech.glide.request.RequestOptions
 import com.galih.myrecipes.databinding.ItemRowRecipeBinding
 import com.galih.myrecipes.model.Recipe
 
-class Adapter(private val listRecipe: ArrayList<Recipe>): RecyclerView.Adapter<Adapter.ListViewHolder>() {
+class Adapter(private val listRecipe: ArrayList<Recipe>, private var onItemClickCallback: OnItemClickCallback): RecyclerView.Adapter<Adapter.ListViewHolder>() {
 
-    private lateinit var onItemClickCallBack: OnItemClickCallBack
 
-    fun setOnItemClickCallBack(onItemClickCallBack: OnItemClickCallBack){
-        this.onItemClickCallBack = onItemClickCallBack
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
     }
+
 
     inner class ListViewHolder(val binding: ItemRowRecipeBinding): RecyclerView.ViewHolder(binding.root)
 
@@ -35,13 +36,16 @@ class Adapter(private val listRecipe: ArrayList<Recipe>): RecyclerView.Adapter<A
             tvTime.text = "${recipe.time} Min"
             tvIngredient.text = "${recipe.ingredientSum} Ingred"
             tvRating.text = "${recipe.rating}.0"
-            btnSeeRecipe.setOnClickListener { onItemClickCallBack.onItemClicked(listRecipe[holder.adapterPosition]) }
         }
+        holder.binding.btnSeeRecipe.setOnClickListener{
+                onItemClickCallback.onItemClicked(listRecipe[holder.adapterPosition])
+             }
     }
 
     override fun getItemCount(): Int = listRecipe.size
 
-    interface OnItemClickCallBack{
+    interface OnItemClickCallback {
         fun onItemClicked(data: Recipe)
     }
+
 }
