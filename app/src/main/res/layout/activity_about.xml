@@ -23,17 +23,19 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="16dp"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@drawable/ic_profile_white" />
+                android:src="@drawable/ic_profile_white"
+                android:contentDescription="@string/photo_profile" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Galih Doe"
+                android:text="@string/galih_doe"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:layout_marginTop="12dp"
@@ -64,13 +66,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="42dp"
                     android:layout_height="42dp"
                     android:background="@color/green_main"
-                    android:src="@drawable/ic_email" />
+                    android:src="@drawable/ic_email"
+                    android:contentDescription="@string/icon_email" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -85,13 +89,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="42dp"
                     android:layout_height="42dp"
                     android:background="@color/green_main"
-                    android:src="@drawable/ic_phone" />
+                    android:src="@drawable/ic_phone"
+                    android:contentDescription="@string/icon_phone" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -106,13 +112,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
                     android:layout_width="42dp"
                     android:layout_height="42dp"
                     android:background="@color/green_main"
-                    android:src="@drawable/ic_location" />
+                    android:src="@drawable/ic_location"
+                    android:contentDescription="@string/icon_address" />
 
                 <TextView
                     android:layout_width="wrap_content"

@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GALEH/project/my_recipe/app/src/main/res/layout/activity_about.xml" value="0.32608695652173914" />
+        <entry key="..\:/GALEH/project/my_recipe/app/src/main/res/layout/activity_detail.xml" value="0.33" />
+        <entry key="..\:/GALEH/project/my_recipe/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/GALEH/project/my_recipe/app/src/main/res/layout/activity_splash.xml" value="0.32608695652173914" />
+        <entry key="..\:/GALEH/project/my_recipe/app/src/main/res/layout/item_row_recipe.xml" value="0.32608695652173914" />
         <entry key="..\:/MyProject/native/workig on project/food_recipe/app/src/main/res/drawable/ic_book_recipe.xml" value="0.2203125" />
         <entry key="..\:/MyProject/native/workig on project/food_recipe/app/src/main/res/drawable/ic_star_rating_white.xml" value="0.2203125" />
         <entry key="..\:/MyProject/native/workig on project/food_recipe/app/src/main/res/drawable/splash_bg.xml" value="0.17962962962962964" />

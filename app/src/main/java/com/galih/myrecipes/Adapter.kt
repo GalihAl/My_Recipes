@@ -11,13 +11,6 @@ import com.galih.myrecipes.model.Recipe
 
 class Adapter(private val listRecipe: ArrayList<Recipe>, private var onItemClickCallback: OnItemClickCallback): RecyclerView.Adapter<Adapter.ListViewHolder>() {
 
-
-
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback
-    }
-
-
     inner class ListViewHolder(val binding: ItemRowRecipeBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {

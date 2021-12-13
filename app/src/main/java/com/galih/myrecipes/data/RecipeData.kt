@@ -1,9 +1,9 @@
-package com.galih.myrecipes.viewModel
+package com.galih.myrecipes.data
 
 import com.galih.myrecipes.R
 import com.galih.myrecipes.model.Recipe
 
-object RecipeViewModel {
+object RecipeData {
     private val recipeNames = arrayOf(
         "Tongkol Cabai Hijau",
         "Bobor Ayam",

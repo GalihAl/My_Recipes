@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".view.DetailActivity">
 
         <ImageView
@@ -15,7 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="350dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/image_boborayam" />
+            android:src="@drawable/image_boborayam"
+            android:contentDescription="@string/food_photo" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_card_green"
@@ -23,10 +24,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/iv_photo"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="-100dp"
+            android:layout_marginTop="-60dp"
             android:layout_marginEnd="32dp"
             app:cardBackgroundColor="@color/green_main"
-            app:cardCornerRadius="24dp"
+            app:cardCornerRadius="12dp"
             app:cardElevation="1dp">
 
             <LinearLayout
@@ -46,7 +47,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentStart="true"
-                        android:text="Bobor Ayam"
+                        android:text="@string/bobor_ayam"
                         android:textColor="@color/white"
                         android:textSize="28sp" />
 
@@ -56,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="4dp"
                         android:layout_toStartOf="@+id/iv_rating"
-                        android:text="5.0"
+                        android:text="@string/_5_0"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -84,7 +85,8 @@
                         android:drawablePadding="6dp"
                         android:text="4 Bahan"
                         android:textAlignment="center"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
 
                     <TextView
                         android:id="@+id/sum_time"
@@ -93,7 +95,7 @@
                         android:layout_weight="1"
                         android:drawableTop="@drawable/ic_time"
                         android:drawablePadding="6dp"
-                        android:text="25 Min"
+                        android:text="@string/_25_min"
                         android:textAlignment="center"
                         android:textColor="@color/white" />
 
@@ -104,7 +106,7 @@
                         android:layout_weight="1"
                         android:drawableTop="@drawable/ic_calory"
                         android:drawablePadding="6dp"
-                        android:text="3 Kalori"
+                        android:text="@string/_3_kalori"
                         android:textAlignment="center"
                         android:textColor="@color/white" />
                 </LinearLayout>
@@ -119,8 +121,8 @@
             android:layout_below="@+id/cv_card_green"
             android:layout_marginStart="18dp"
             android:layout_marginTop="24dp"
-            android:text="Tentang masakan"
-            android:textSize="16dp"
+            android:text="@string/tentang_masakan"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
@@ -131,7 +133,7 @@
             android:layout_marginStart="18dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="18dp"
-            android:text="Delicius and yummy easy to make with simple ingredient with acient tecniqu we can create crispy chicken and dont worry about, bon apetit." />
+            android:text="@string/delicius_and_yummy_easy_to_make_with_simple_ingredient_with_acient_tecniqu_we_can_create_crispy_chicken_and_dont_worry_about_bon_apetit" />
 
         <TextView
             android:id="@+id/bahan"
@@ -140,8 +142,8 @@
             android:layout_below="@+id/about_recipe_description"
             android:layout_marginStart="18dp"
             android:layout_marginTop="24dp"
-            android:text="Bahan"
-            android:textSize="16dp"
+            android:text="@string/bahan"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -158,8 +160,8 @@
             android:layout_below="@+id/rv_bahan"
             android:layout_marginStart="18dp"
             android:layout_marginTop="24dp"
-            android:text="Cara Masak"
-            android:textSize="16dp"
+            android:text="@string/cara_masak"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <androidx.recyclerview.widget.RecyclerView

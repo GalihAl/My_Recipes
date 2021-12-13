@@ -2,7 +2,7 @@ package com.galih.myrecipes.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.galih.myrecipes.R
+import android.view.MenuItem
 import com.galih.myrecipes.databinding.ActivityAboutBinding
 
 class AboutActivity : AppCompatActivity() {
@@ -13,5 +13,15 @@ class AboutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // showing the back button in action bar
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "About"
+        supportActionBar?.elevation = 0F
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

@@ -34,6 +34,14 @@ class DetailActivity : AppCompatActivity() {
             sumCalory.text = "${recipe.calorie.toString()} Kalori"
         }
         Glide.with(this@DetailActivity).load(recipe.photo).into(binding.ivPhoto)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "Detail Recipe"
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
 }

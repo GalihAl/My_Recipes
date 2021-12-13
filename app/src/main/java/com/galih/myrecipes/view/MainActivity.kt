@@ -2,14 +2,12 @@ package com.galih.myrecipes.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.galih.myrecipes.Adapter
 import com.galih.myrecipes.databinding.ActivityMainBinding
 import com.galih.myrecipes.model.Recipe
-import com.galih.myrecipes.viewModel.RecipeViewModel
+import com.galih.myrecipes.data.RecipeData
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,16 +21,9 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-        list.addAll(RecipeViewModel.listData)
+        list.addAll(RecipeData.listData)
         showRecyclerView()
 
-
-       /* adapter.setOnItemClickCallback(object : Adapter.OnItemClickCallback {
-            override fun onItemClicked(data: Recipe) {
-                moveIntent(data)
-                Toast.makeText(this@MainActivity, "anda memilih ${data.name}", Toast.LENGTH_SHORT).show()
-            }
-        })*/
         binding.ibAbout.setOnClickListener {
             val intent = Intent(this@MainActivity, AboutActivity::class.java)
             startActivity(intent)
@@ -53,14 +44,5 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.setHasFixedSize(true)
 
     }
-
-/*
-    private fun moveIntent(recipe: Recipe){
-        val moveDataToDetail = Intent(this@MainActivity, DetailActivity::class.java).apply {
-            putExtra(DetailActivity.EXTRA_RECIPE, recipe)
-        }
-        startActivity(moveDataToDetail)
-    }
-*/
 
 }

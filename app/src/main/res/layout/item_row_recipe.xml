@@ -15,7 +15,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingEnd="16dp">
+        android:paddingEnd="16dp"
+        tools:ignore="RtlSymmetry">
 
         <ImageView
             android:id="@+id/iv_avatar"
@@ -25,14 +26,15 @@
             android:src="@mipmap/ic_launcher"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/food_photo" />
 
         <Button
             android:id="@+id/btn_see_recipe"
             android:layout_width="wrap_content"
             android:layout_height="42dp"
             android:layout_marginBottom="8dp"
-            android:text="See Recipe"
+            android:text="@string/see_recipe"
             android:backgroundTint="@color/green_main"
             android:theme="@style/Button.Style.green"
             android:textAllCaps="false"
@@ -44,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Nasi Kebuli"
+            android:text="@string/nasi_kebuli"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/tv_time"
@@ -55,7 +57,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="4dp"
-            android:text="Delicius and yummy , easy to cook"
+            android:text="@string/delicius_and_yummy_easy_to_cook"
             android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/btn_see_recipe"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,16 +73,17 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/style_right_border"
             android:paddingEnd="10dp"
-            android:text="23 Min"
+            android:text="@string/_23_min"
             app:layout_constraintStart_toEndOf="@+id/iv_avatar"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:id="@+id/tv_ingredient"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="6 Ingredients"
+            android:text="@string/_6_ingredients"
             app:layout_constraintStart_toEndOf="@+id/tv_time"
             app:layout_constraintTop_toTopOf="@+id/tv_time" />
 
@@ -89,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="2dp"
-            android:text="5.0"
+            android:text="@string/_5_0"
             app:layout_constraintEnd_toStartOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="@+id/tv_ingredient" />
 
@@ -97,10 +100,9 @@
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:tint="@color/ic_star_rating_color"
             app:layout_constraintBottom_toBottomOf="@+id/tv_rating"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tv_rating"
-            app:srcCompat="@drawable/ic_star_rating" />
+            app:srcCompat="@drawable/ic_star_rate_gold" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

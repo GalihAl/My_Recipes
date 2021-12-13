@@ -11,7 +11,7 @@
         <activity
             android:name=".view.DetailActivity"
             android:exported="false"
-            android:theme="@style/Theme.MyRecipes" />
+            android:theme="@style/Theme.Detail" />
         <activity
             android:name=".view.AboutActivity"
             android:exported="false"
