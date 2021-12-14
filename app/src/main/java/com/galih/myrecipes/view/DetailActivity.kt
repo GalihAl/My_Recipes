@@ -32,6 +32,8 @@ class DetailActivity : AppCompatActivity() {
             sumIngredient.text = "${recipe.ingredientSum.toString()} Bahan"
             sumTime.text = "${recipe.time.toString()} Min"
             sumCalory.text = "${recipe.calorie.toString()} Kalori"
+            tvBahan.text = recipe.ingredient
+            tvHowToCook.text = recipe.stepCook
         }
         Glide.with(this@DetailActivity).load(recipe.photo).into(binding.ivPhoto)
 

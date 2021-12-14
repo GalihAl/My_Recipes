@@ -96,8 +96,6 @@ object RecipeData {
         150,
         200
     )
-
-
     private val recipeIngredients = arrayOf(
         "3 ekor ikan tongkol\n" +
                 "1 buah tahu, potong dadu\n" +

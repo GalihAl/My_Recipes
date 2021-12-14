@@ -146,30 +146,35 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_bahan"
+        <TextView
+            android:id="@+id/tv_bahan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/bahan"
-            android:layout_marginTop="24dp" />
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"/>
 
         <TextView
             android:id="@+id/how_to_cook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rv_bahan"
+            android:layout_below="@+id/tv_bahan"
             android:layout_marginStart="18dp"
             android:layout_marginTop="24dp"
             android:text="@string/cara_masak"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_how_to_cook"
+        <TextView
+            android:id="@+id/tv_how_to_cook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/how_to_cook"
-            android:layout_marginTop="24dp" />
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="24dp"/>
 
     </RelativeLayout>
 </ScrollView>
